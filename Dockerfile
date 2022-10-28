@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:100
 
 EXPOSE 80
 RUN rm -rf /etc/nginx/conf.d/default.conf

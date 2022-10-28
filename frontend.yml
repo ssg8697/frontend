@@ -5,16 +5,18 @@ metadata:
 spec:
  selector:
    matchLabels:
-    type: frontend
+    type: web
+    app: frontend
  replicas: 2
  template:
    metadata:
      labels:
-       type: frontend
+       type: web
+       app: frontend
    spec:
     containers:
     - name: frontend
-      image: ssg8697/frontend:latest
+      image: ssg8697/frontend:100
       envFrom:
       ports:
       - containerPort: 80
