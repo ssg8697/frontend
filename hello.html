@@ -13,8 +13,7 @@
 					document.getElementById("text").innerHTML = httpRequest.responseText;
 				}
 			};
-			// GET 방식으로 요청을 보내면서 데이터를 동시에 전달함.
-			httpRequest.open("GET", "http://10.98.1.200:8000/hello", true);
+			httpRequest.open("GET", "10.98.117.237:30000/hello", true);
 			httpRequest.send();
 		}
 	</script>
