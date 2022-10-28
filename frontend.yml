@@ -16,7 +16,7 @@ spec:
    spec:
     containers:
     - name: frontend
-      image: ssg8697/frontend:100
+      image: ssg8697/frontend:latest
       envFrom:
       ports:
       - containerPort: 80
